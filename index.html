@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Customer Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">◆</span>
+      <h1>Customer<span>Relationship</span></h1>
+    </div>
+    <nav class="nav-menu">
+      <button class="nav-btn active" data-page="dashboard">🏠 Dashboard</button>
+      <button class="nav-btn" data-page="customers">👥 Customers</button>
+      <button class="nav-btn" data-page="add-customer">➕ Add Customer</button>
+      <button class="nav-btn" data-page="reports">📊 Reports</button>
+    </nav>
+    <div class="sidebar-footer"><p>Customer Management</p>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="main-content">
+
+    <header class="topbar">
+      <h2 id="page-title">Dashboard</h2>
+      <div class="topbar-right">
+        <input type="text" id="global-search" placeholder="🔍 Search customers...">
+      </div>
+    </header>
+
+    <!-- ---------- DASHBOARD PAGE ---------- -->
+    <section id="dashboard" class="page active">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3 id="stat-total">0</h3>
+          <p>Total Customers</p>
+        </div>
+        <div class="stat-card lead">
+          <h3 id="stat-lead">0</h3>
+          <p>Active Leads</p>
+        </div>
+        <div class="stat-card active">
+          <h3 id="stat-active">0</h3>
+          <p>Active Customers</p>
+        </div>
+        <div class="stat-card closed">
+          <h3 id="stat-closed">0</h3>
+          <p>Closed Deals</p>
+        </div>
+      </div>
+
+      <div class="dashboard-lower">
+        <div class="card recent-card">
+          <h3>Recently Added Customers</h3>
+          <table class="mini-table">
+            <thead><tr><th>Name</th><th>Company</th><th>Status</th></tr></thead>
+            <tbody id="recent-customers-body"></tbody>
+          </table>
+        </div>
+        <div class="card status-card">
+          <h3>Customer Status Breakdown</h3>
+          <div id="status-bars"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- CUSTOMERS LIST PAGE ---------- -->
+    <section id="customers" class="page">
+      <div class="page-header">
+        <h3>All Customers</h3>
+        <select id="filter-status">
+          <option value="all">All Status</option>
+          <option value="Lead">Lead</option>
+          <option value="Active">Active</option>
+          <option value="Closed">Closed</option>
+        </select>
+      </div>
+      <div class="table-wrapper">
+        <table class="full-table" id="customer-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Company</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="customer-table-body"></tbody>
+        </table>
+        <p id="empty-msg" class="empty-msg" style="display:none;">No customers found. Add your first customer!</p>
+      </div>
+    </section>
+
+    <!-- ---------- ADD / EDIT CUSTOMER PAGE ---------- -->
+    <section id="add-customer" class="page">
+      <div class="form-card">
+        <h3 id="form-heading">Add New Customer</h3>
+        <form id="customer-form">
+          <input type="hidden" id="customer-id">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" required placeholder="e.g. Ravi Sharma">
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" placeholder="e.g. Sharma Traders">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" required placeholder="e.g. ravi@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" required placeholder="e.g. 9876543210">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select id="status">
+                <option value="Lead">Lead</option>
+                <option value="Active">Active</option>
+                <option value="Closed">Closed</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="notes">Notes</label>
+            <textarea id="notes" rows="3" placeholder="Any additional notes about this customer..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" id="submit-btn" class="btn-primary">Save Customer</button>
+            <button type="button" id="cancel-edit-btn" class="btn-secondary" style="display:none;">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ---------- REPORTS PAGE (placeholder for future 70%) ---------- -->
+    <section id="reports" class="page">
+      <div class="card">
+        <h3>Reports (Coming in next phase)</h3>
+        <p>This section will include monthly lead conversion charts, revenue tracking and export options in the upcoming project phase.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- toast notification -->
+  <div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
