@@ -41,3 +41,18 @@ A front-end mini project that lets a business manage customer records, track lea
 | Member 3 | Backend Logic Developer — Customer Management (CRUD) | Add/Edit/Delete/List operations, form validation |
 | Member 4 | Data & Analytics Developer — Dashboard, Search & Storage | localStorage persistence, dashboard stats, search/filter |
 
+
+
+
+
+## Branches
+
+- [main](../../tree/main) — Main project branch
+- [dev](../../tree/dev) — Team development branch
+- [Lavi](../../tree/Lavi) — Lavi's work
+
+## My Work on dev
+
+- Added phone number to customer search
+- Added the Customer Reports page structure
+- Improved responsive layout for smaller screens
