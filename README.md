@@ -52,7 +52,7 @@ A front-end mini project that lets a business manage customer records, track lea
 - [Lavi](../../tree/Lavi) — Lavi's work
 - - [Aparna](../../tree/dev) — My work on the `dev` branch
 
-## My Work on dev
+##  APARNA My Work on dev
 
 - Added phone number to customer search
 - Added the Customer Reports page structure
