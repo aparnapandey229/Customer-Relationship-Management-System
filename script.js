@@ -110,6 +110,7 @@ function renderCustomerTable(filter = "all", searchTerm = "") {
     list = list.filter(c =>
       c.name.toLowerCase().includes(term) ||
       c.email.toLowerCase().includes(term) ||
+       c.phone.includes(term) ||
       (c.company || "").toLowerCase().includes(term)
     );
   }
