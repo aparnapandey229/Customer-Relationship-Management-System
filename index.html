@@ -147,13 +147,56 @@
       </div>
     </section>
 
-    <!-- ---------- REPORTS PAGE (placeholder for future 70%) ---------- -->
     <section id="reports" class="page">
-      <div class="card">
-        <h3>Reports (Coming in next phase)</h3>
-        <p>This section will include monthly lead conversion charts, revenue tracking and export options in the upcoming project phase.</p>
-      </div>
-    </section>
+  <div class="page-header">
+    <h3>Customer Reports</h3>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3 id="report-total">--</h3>
+      <p>Total Customers</p>
+    </div>
+    <div class="stat-card lead">
+      <h3 id="report-leads">--</h3>
+      <p>Leads</p>
+    </div>
+    <div class="stat-card active">
+      <h3 id="report-active">--</h3>
+      <p>Active Customers</p>
+    </div>
+    <div class="stat-card closed">
+      <h3 id="report-closed">--</h3>
+      <p>Closed Deals</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Customers by Status</h3>
+    <table class="full-table">
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Customer Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lead</td>
+          <td id="report-lead-count">--</td>
+        </tr>
+        <tr>
+          <td>Active</td>
+          <td id="report-active-count">--</td>
+        </tr>
+        <tr>
+          <td>Closed</td>
+          <td id="report-closed-count">--</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
   </main>
 
