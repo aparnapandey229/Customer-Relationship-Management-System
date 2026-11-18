@@ -96,7 +96,33 @@ function renderDashboard() {
       </div>`;
   });
 }
+function renderReports() {
+  let total = 0;
+  let leads = 0;
+  let active = 0;
+  let closed = 0;
 
+  for (let i = 0; i < customers.length; i++) {
+    total++;
+
+    if (customers[i].status === "Lead") {
+      leads++;
+    } else if (customers[i].status === "Active") {
+      active++;
+    } else if (customers[i].status === "Closed") {
+      closed++;
+    }
+  }
+
+  document.getElementById("report-total").textContent = total;
+  document.getElementById("report-leads").textContent = leads;
+  document.getElementById("report-active").textContent = active;
+  document.getElementById("report-closed").textContent = closed;
+
+  document.getElementById("report-lead-count").textContent = leads;
+  document.getElementById("report-active-count").textContent = active;
+  document.getElementById("report-closed-count").textContent = closed;
+}
 // ---------- CUSTOMER TABLE RENDERING ----------
 function renderCustomerTable(filter = "all", searchTerm = "") {
   const tbody = document.getElementById("customer-table-body");
