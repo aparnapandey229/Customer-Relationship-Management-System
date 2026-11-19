@@ -95,6 +95,7 @@ function renderDashboard() {
         <div class="bar-bg"><div class="bar-fill" style="width:${pct}%; background:${colors[s]}"></div></div>
       </div>`;
   });
+   renderReports();
 }
 function renderReports() {
   let total = 0;
