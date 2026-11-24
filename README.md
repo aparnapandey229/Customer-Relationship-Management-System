@@ -58,3 +58,6 @@ A front-end mini project that lets a business manage customer records, track lea
 - Added the Customer Reports page structure
 - Improved responsive layout for smaller screens
 - Reports counts aur dark theme.
+
+- ## LAVI my work on dev
+  
