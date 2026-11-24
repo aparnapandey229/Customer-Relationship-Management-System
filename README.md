@@ -70,3 +70,17 @@ A front-end mini project that lets a business manage customer records, track lea
 - Saved customer data in browser localStorage.
 - Styled the app and added a responsive layout.
 - Added a Reports section placeholder.
+
+## ANMOL My Work on dev
+
+- Developed a dedicated VIP Customer Management section in the existing CRM dashboard.
+- Implemented VIP customer identification logic using existing customer data.
+- Created a separate VIP customer table displaying customer details.
+- Added dedicated search functionality by Customer Name, Email Address, and Customer ID.
+- Implemented multi-level filtering by Customer Category and CRM Status.
+- Added dynamic VIP analytics displaying total VIP customers, active VIP customers, leads, and closed customers.
+- Implemented a Customer Details Modal to view complete VIP customer profiles.
+- Integrated VIP customer data with the existing localStorage system.
+- Ensured VIP status persistence after browser refresh.
+- Maintained the existing CRM design and responsive layout.
+- Used HTML5, CSS3, and Vanilla JavaScript without any external frameworks.
