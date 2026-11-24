@@ -8,12 +8,14 @@ A front-end mini project that lets a business manage customer records, track lea
 
 ## 🚀 Features (Current)
 
-- **Dashboard** — live stats (Total, Leads, Active, Closed) + status breakdown chart
+- **Dashboard** — live stats (Total, Leads, Active, Closed, VIP Customers) + status breakdown chart
 - **Customer Management** — Add / Edit / Delete customers with form validation
-- **Customer List** — table view of all customers with status badges
-- **Search & Filter** — live search by name/email/company, filter by status
-- **Data Persistence** — customer data survives page refresh via `localStorage`
-- **Responsive Design** — works on desktop and mobile
+- **Customer List** — table view of all customers with status & category badges, VIP indicators, and quick actions
+- **VIP Customer Management (New ⭐)** — Dedicated VIP dashboard section, VIP customer table, customer category & VIP identification logic, dedicated multi-field search (by name, email, or ID), multi-level filtering (category & CRM status), live VIP count, and comprehensive customer detail modal
+- **Customer Detail View Modal** — Inspect individual customer profiles with complete contact, company, category, status, VIP badge, and notes
+- **Search & Filter** — live search by name/email/company/phone/ID, filter by status and category
+- **Data Persistence** — customer data survives page refresh via `localStorage` with backward compatibility
+- **Responsive Design** — clean dark-theme UI that works on desktop, tablet, and mobile
 
 ## 🧰 Tech Stack
 
