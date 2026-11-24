@@ -60,4 +60,11 @@ A front-end mini project that lets a business manage customer records, track lea
 - Reports counts aur dark theme.
 
 - ## LAVI my work on dev
-  
+  - Added the initial frontend files: index.html, style.css, and script.js.
+- Built the sidebar navigation, Dashboard, Customers list, and Add/Edit Customer form.
+- Added customer add, edit, delete, and form validation.
+- Added dashboard statistics, recent customers, and status breakdown.
+- Added search by name, email, or company, plus a status filter.
+- Saved customer data in browser localStorage.
+- Styled the app and added a responsive layout.
+- Added a Reports section placeholder.
